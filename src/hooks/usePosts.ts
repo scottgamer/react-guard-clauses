@@ -11,7 +11,7 @@ interface Post {
   body: string;
 }
 
-const useData = () => {
+const usePosts = () => {
   const [posts, setPosts] = useState<Post[]>();
 
   useEffect(() => {
@@ -31,4 +31,4 @@ const useData = () => {
   return posts;
 };
 
-export default useData;
+export default usePosts;
